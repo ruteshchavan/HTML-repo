@@ -1,0 +1,57 @@
+<!-- 
+Different input types you can use in HTML :
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">  - defines a password field.
+<input type="radio">
+<input type="range">
+<input type="reset">  -  defines a reset button that will reset all form values to their default values.
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">  - defines a single-line text input field.
+<input type="time">
+<input type="url">
+<input type="week"> 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form>
+<label for="form">Username :</label><br>
+<input type="text" id="form" name="uname"><br>
+<label for="pwd">Password :</label><br>
+<input type="password" id="pwd" name="pass"><br><br>
+<input type="submit" value="Login">
+<input type="reset" value="Reset"><br><br>
+
+<!-- Radio buttons let a user select ONLY ONE of a limited number of choices: -->
+ <p>Select Favourite Programming Language</p>
+<input type="radio" id="java" name="lang" value="Java">
+<label for="java">JAVA</label><br>
+<input type="radio" id="c++" name="lang" value="c++">
+<label for="c++">C++</label><br>
+<input type="radio" id="c" name="lang" value="C">
+<label for="c">C</label><br>
+<input type="submit" value="Select">
+
+</form>
+
+</body>
+</html>
