@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <form method="get">
+    <!-- The <select> element defines a drop-down list: -->
+    <!-- The <option> element defines an option that can be selected. -->    
+<label for="a"><h1>IT Companies</h1></label><br>
+<select id="a" name="Computer" size="4" multiple>
+<!-- Use the size attribute to specify the number of visible values.
+     Use the multiple attribute to allow the user to select more than one value ( use ctrl cmd to select). -->
+    <option value="Google">Google</option>
+    <option value="Amazon">Amazon</option>
+    <option value="Microsoft" selected>Microsoft</option><!--To define a pre-selected option , add the selected attribute to the option-->
+    <option value="IBM">TCS</option>
+    <option value="Wipro">Wipro</option>
+    <option value="HCL">HCL</option>
+    <option value="Info">Infosys</option>
+    <option value="Del">Deloitte</option>
+    <option value="Cog">Cognizant</option>
+    <option value="Act">Accenture</option>
+    <option value="TM">TechMahindra</option>
+</select><br><br>
+<input type="submit">
+<br>
+<br>
+
+<!-- The <textarea> element defines a multi-line input field (a text area):
+The rows attribute specifies the visible number of lines in a text area.
+The cols attribute specifies the visible width of a text area.
+You can also define the size of the text area by using CSS: -->
+<p>This is the Text-Area to write :</p>
+<textarea name="Message" rows="10" cols="30"></textarea><br>
+<input type="submit"><br><br>
+
+
+<!-- The <button> element defines a clickable button: -->
+<button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+
+<!-- 
+The <fieldset> element is used to group related data in a form.
+The <legend> element defines a caption for the <fieldset> element. -->
+
+<fieldset>
+    <legend style="text-align: center;"><h3>Information</h3></legend>
+    <label for="first">FirstName</label>
+    <input type="text" id="first" name="fname" value=""><br><br>
+    <label for="last">LastName</label>
+    <input type="text" id="last" name="lname" value=""><br><br>
+    <input type="submit">
+</fieldset>
+
+
+</form>
+
+</body>
+</html>
+<!--  -->
