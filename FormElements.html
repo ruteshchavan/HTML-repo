@@ -40,6 +40,7 @@ You can also define the size of the text area by using CSS: -->
 
 
 <!-- The <button> element defines a clickable button: -->
+<p>Button</p>
 <button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
 
 <!-- 
@@ -53,7 +54,19 @@ The <legend> element defines a caption for the <fieldset> element. -->
     <label for="last">LastName</label>
     <input type="text" id="last" name="lname" value=""><br><br>
     <input type="submit">
-</fieldset>
+</fieldset><br>
+
+<p><h4>Programming Language</h5>
+Choose a language</p>
+<input list="lang" name="language">
+  <datalist id="lang">
+    <option value="C">
+    <option value="C++">
+    <option value="Java">
+    <option value="Pyhton">
+    <option value="C#">
+    </datalist>
+    <input type="submit">
 
 
 </form>
