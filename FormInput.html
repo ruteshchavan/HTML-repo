@@ -1,20 +1,20 @@
 <!-- 
 Different input types you can use in HTML :
 <input type="button">
-<input type="checkbox">
+<input type="checkbox">  - defines a checkbox.
 <input type="color">
-<input type="date">
+<input type="date">  -  used for input fields that should contain a date
 <input type="datetime-local">
-<input type="email">
-<input type="file">
+<input type="email">  - used for input fields that should contain an e-mail address.
+<input type="file">  - defines a file-select field and a "Browse" button for file uploads.
 <input type="hidden">
-<input type="image">
+<input type="image">  - defines an image as a submit button.
 <input type="month">
 <input type="number">
 <input type="password">  - defines a password field.
-<input type="radio">
+<input type="radio">  - defines a radio button.
 <input type="range">
-<input type="reset">  -  defines a reset button that will reset all form values to their default values.
+<input type="reset">  - defines a reset button that will reset all form values to their default values.
 <input type="search">
 <input type="submit">
 <input type="tel">
@@ -30,26 +30,68 @@ Different input types you can use in HTML :
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+      #birthday{
+        border: 2px black solid;
+      }
+    </style>
 </head>
 <body>
-
 <form>
 <label for="form">Username :</label><br>
-<input type="text" id="form" name="uname"><br>
+<input type="text" id="form" name="uname" 
+  placeholder="abc_123" autofocus><br>  <!--autofocus specifies that an input field should automatically get focus when the page loads-->
 <label for="pwd">Password :</label><br>
-<input type="password" id="pwd" name="pass"><br><br>
-<input type="submit" value="Login">
-<input type="reset" value="Reset"><br><br>
+<input type="password" id="pwd" name="pass" placeholder="12*7@#"><br><br>
+<input type="image" src="/2504-submit-text.gif" alt="Submit" width="40" height="40"><br>
 
-<!-- Radio buttons let a user select ONLY ONE of a limited number of choices: -->
- <p>Select Favourite Programming Language</p>
+
+<!-- Radio buttons let a user select ONLY ONE of a number of choices: -->
+<p>Select Favourite Programming Language</p>
 <input type="radio" id="java" name="lang" value="Java">
 <label for="java">JAVA</label><br>
 <input type="radio" id="c++" name="lang" value="c++">
 <label for="c++">C++</label><br>
 <input type="radio" id="c" name="lang" value="C">
 <label for="c">C</label><br>
-<input type="submit" value="Select">
+<input type="submit" value="Select"><br><br>
+
+
+<!-- Checkboxes let a user select ZERO or MORE options of a number of choices. -->
+<p>Select Favourite Chicken dishes :</p>
+<input type="checkbox" id="a" name="dish1" value="Chicken 65">
+<label for="a"> Chicken 65</label><br>
+<input type="checkbox" id="b" name="dish2" value="Chicken Kebab">
+<label for="b"> Chicken Kebab</label><br>
+<input type="checkbox" id="c" name="dish3" value="Chicken Shawarma">
+<label for="c"> Chicken Shawarma</label><br>
+<input type="submit" value="Done"><br><br>
+
+
+<!-- defines a file-select field and a "Browse" button for file uploads. -->
+<label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile" multiple><br><br> <!-- allows multiple files to be selected -->
+  <input type="submit" value="Submit"><br><br>
+
+
+<!-- input fields that should contain a date  YYYY-MM-DD
+ You can also use the min and max attributes to add restrictions to dates: -->
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday" min="1990-01-02" max="2002-12-31">
+  <input type="submit" value="Submit"><br><br>
+
+  
+<!-- placeholder attribute specifies hint that describes the expected value of an input field -->
+<!-- required attribute specifies that an input field must be filled out before submitting the form. -->
+<label for="email">Email ID</label>
+<input type="email" id="email" name="e-mail" placeholder="ABC123@gmail.com" required> 
+<input type="submit" value="send"> <input type="reset" value="Reset"><br><br>
+
+
+
+
+
 
 </form>
 
