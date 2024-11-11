@@ -43,8 +43,8 @@ Different input types you can use in HTML :
 <input type="text" id="form" name="uname" 
   placeholder="abc_123" autofocus><br>  <!--autofocus specifies that an input field should automatically get focus when the page loads-->
 <label for="pwd">Password :</label><br>
-<input type="password" id="pwd" name="pass" placeholder="12*7@#"><br><br>
-<input type="image" src="/2504-submit-text.gif" alt="Submit" width="40" height="40"><br>
+<input type="password" id="pwd" name="pass" placeholder="12*7@#"><br>
+
 
 
 <!-- Radio buttons let a user select ONLY ONE of a number of choices: -->
@@ -55,7 +55,7 @@ Different input types you can use in HTML :
 <label for="c++">C++</label><br>
 <input type="radio" id="c" name="lang" value="C">
 <label for="c">C</label><br>
-<input type="submit" value="Select"><br><br>
+
 
 
 <!-- Checkboxes let a user select ZERO or MORE options of a number of choices. -->
@@ -66,32 +66,42 @@ Different input types you can use in HTML :
 <label for="b"> Chicken Kebab</label><br>
 <input type="checkbox" id="c" name="dish3" value="Chicken Shawarma">
 <label for="c"> Chicken Shawarma</label><br>
-<input type="submit" value="Done"><br><br>
+<br>
 
 
 <!-- defines a file-select field and a "Browse" button for file uploads. -->
 <label for="myfile">Select a file:</label>
-  <input type="file" id="myfile" name="myfile" multiple><br><br> <!-- allows multiple files to be selected -->
-  <input type="submit" value="Submit"><br><br>
+  <input type="file" id="myfile" name="myfile" multiple><br> <!-- allows multiple files to be selected -->
+<br>
 
 
 <!-- input fields that should contain a date  YYYY-MM-DD
  You can also use the min and max attributes to add restrictions to dates: -->
   <label for="birthday">Birthday:</label>
   <input type="date" id="birthday" name="birthday" min="1990-01-02" max="2002-12-31">
-  <input type="submit" value="Submit"><br><br>
+<br><br>
 
   
 <!-- placeholder attribute specifies hint that describes the expected value of an input field -->
 <!-- required attribute specifies that an input field must be filled out before submitting the form. -->
 <label for="email">Email ID</label>
 <input type="email" id="email" name="e-mail" placeholder="ABC123@gmail.com" required> 
-<input type="submit" value="send"> <input type="reset" value="Reset"><br><br>
+<input type="reset" value="Reset"><br><br>
+
+<input type="image" src="/2504-submit-text.gif" alt="Submit" width="100" height="100"><br><br>
 
 
-
-
-
+<!-- An HTML iframe is used to display a web page within a web page.
+    <iframe> tag specifies an inline frame. 
+    Use the height and width attributes to specify the size of the iframe.
+    The target attribute of the link must refer to the name attribute of the iframe.
+    -->
+<iframe src="beavis-computer.gif" name="a" style="height:300px;width:300px;" title="Iframe Example"></iframe>
+<p><a href="Table.html" target="a"> Table 1</a>
+   <a href="Table-Border.html" target="a"> Table 2</a>
+   <a href="Table-Rowspan-Colspan.html" target="a"> Table 3</a>
+   <a href="Table-Size.html" target="a"> Table 4</a>
+</p>
 
 </form>
 
